@@ -29,9 +29,9 @@ img.small {
 
 img.ribbon
 {
-	position: fixed;  
-	top: 0; 
-	right: 0; 
+	position: fixed;
+	top: 0;
+	right: 0;
 	border: 0;
 	z-index: 100;
 }
@@ -55,18 +55,24 @@ img.ribbon
 	color: #333;
 }
 
+.marketing h1
+{
+	padding-top: 50px;
+	font-size: 58px;
+}
+
 @media ( min-width : 768px) {
 	.sidebar {
 		position: fixed;
 		top: 100px;
 		left: 30px;
 	}
-	
+
 	img.ribbon
 	{
-		position: fixed; 
-		top: 0; 
-		right: 0; 
+		position: fixed;
+		top: 0;
+		right: 0;
 		border: 0;
 		z-index: 2000;
 	}
@@ -87,4 +93,3 @@ img.ribbon
 		margin-top: 60px;
 	}
 }
-

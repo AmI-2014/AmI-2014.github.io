@@ -3,7 +3,7 @@ layout: post
 title:  "Smart Raise Your Hand"
 team: SmartAttack
 date:   2014-05-05 18:26:22
-categories: projects
+categories: completed-projects
 image: assets/img/project-snapshots/smart_raise_your_hand.jpg
 project_url: http://AmI-2014.github.io/SmartAttack
 ---

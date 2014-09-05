@@ -47,28 +47,35 @@ active: Home
 					architectural levels (sensors, domotic networks, wireless sensor
 					networks, residential gateways, stream data processing, big data
 					analysis, user interfaces). Application of user-driven design
-					methodologies.  
+					methodologies.
 				</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<img src="assets/img/engagement.png" alt="engagement">
 				<h2>Engagement</h2>
 				<p>
-				Students are required to engage in design and implementation of real-world intelligent environments. 
-				They are required to team-up around project ideas individually proposed and socially ranked. 
-				Teams are composed by 3 students on average, and select the project to carry-on throughout the course. 
-				Final outcomes are publicly reachable (see below for current projects). 
+				Students are required to engage in design and implementation of real-world intelligent environments.
+				They are required to team-up around project ideas individually proposed and socially ranked.
+				Teams are composed by 3 students on average, and select the project to carry-on throughout the course.
+				Final outcomes are publicly reachable (see below for current projects).
 				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-ld-12 col-md-12 col-sm-12">
+				<p>Learn more about the course by visiting <a href="http://bit.ly/polito-ami">http://bit.ly/polito-ami</a>.</p>
+				<p>Video lectures are freely available on a dedicated <a href="http://www.youtube.com/playlist?list=PLqRTLlwsxDL-ikzLwzQIS_R2YojZMvmJW">Youtube playlist</a> and on the teaching portal of the Politecnico di Torino.</p>
 			</div>
 		</div>
 
 	<div class="row">
 		<div class="col-md-12">
 			<hr/>
-			<a id="projects"></a>
+			<a id="completed-projects"></a>
 		</div>
 	</div>
-		{% assign projects = site.categories.projects | sort: 'title' %} 
+		{% assign projects = site.categories.completed-projects | sort: 'title' %}
 		{% for post in projects %} {% assign odd = forloop.index0 | modulo:2 %}
 
 		{%if odd == 0 %}
@@ -102,5 +109,48 @@ active: Home
 			</div>
 		</div>
 		{% endif %} {% endfor %}
+
+		<div class="row">
+			<div class="col-md-12">
+				<a id="ongoing-projects"></a>
+				<div class="page-header">
+					<h1>Ongoing projects</h1>
+				</div>
+			</div>
+		</div>
+			{% assign projects = site.categories.projects | sort: 'title' %}
+			{% for post in projects %} {% assign odd = forloop.index0 | modulo:2 %}
+
+			{%if odd == 0 %}
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">
+						{{ post.title }} <span class="text-muted">({{post.team}})</span>
+					</h2>
+					<p class="lead">
+						{{ post.content}} <a href="{{post.project_url}}"
+							class="btn btn-default">Read more...</a>
+					</p>
+				</div>
+				<div class="col-md-5">
+					<a href="{{post.project_url}}"><img src="{{post.image}}" /></a>
+				</div>
+			</div>
+			{% else %}
+			<div class="row featurette">
+				<div class="col-md-5">
+					<a href="{{post.project_url}}"><img src="{{post.image}}" /></a>
+				</div>
+				<div class="col-md-7">
+					<h2 class="featurette-heading">
+						{{ post.title }} <span class="text-muted">({{post.team}})</span>
+					</h2>
+					<p class="lead">
+						{{ post.content}} <a href="{{post.project_url}}"
+							class="btn btn-default">Read more...</a>
+					</p>
+				</div>
+			</div>
+			{% endif %} {% endfor %}
 	</div>
 </div>

@@ -6,6 +6,7 @@ date:   2014-05-05 18:26:22
 categories: projects
 image: assets/img/project-snapshots/smart_alarm.jpg
 project_url: http://AmI-2014.github.io/TigerTeam
+published: false
 ---
 
 The goal of this project is to implement a intelligent alarm that wake you up in the morning and interact with you in your bedroom.
