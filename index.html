@@ -75,7 +75,7 @@ active: Home
 			<a id="completed-projects"></a>
 		</div>
 	</div>
-		{% assign projects = site.categories.completed-projects | sort: 'title' %}
+		{% assign projects = site.categories.completed-projects | sort: 'date'  %}
 		{% for post in projects %} {% assign odd = forloop.index0 | modulo:2 %}
 
 		{%if odd == 0 %}

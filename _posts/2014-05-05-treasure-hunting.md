@@ -2,7 +2,7 @@
 layout: post
 title:  "Treasure Hunting"
 team: iMe
-date:   2014-05-05 18:26:22
+date:   2014-05-05 18:26:29
 categories: completed-projects
 image: assets/img/project-snapshots/iMe.jpg
 project_url: http://AmI-2014.github.io/iMe

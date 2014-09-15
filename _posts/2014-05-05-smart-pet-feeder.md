@@ -2,7 +2,7 @@
 layout: post
 title:  "Smart Pet Feeder"
 team: GGHF
-date:   2014-05-05 18:26:22
+date:   2014-05-05 18:26:27
 categories: completed-projects
 image: assets/img/project-snapshots/smart_pet_feeder.jpg
 project_url: http://AmI-2014.github.io/GGHF
